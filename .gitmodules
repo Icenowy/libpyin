@@ -1,4 +1,4 @@
 [submodule "external/libgvps"]
 	path = external/libgvps
-	url = https://github.com/Icenowy/libgvps.git
+	url = https://github.com/Icenowy/libgvps
 	branch = cmake
