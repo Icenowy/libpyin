@@ -18,6 +18,8 @@ set_target_properties(pyin PROPERTIES
     POSITION_INDEPENDENT_CODE ON
 )
 
+add_subdirectory(external/libgvps)
+target_link_libraries(pyin PUBLIC gvps)
 
 # Arrange header files for external use
 add_custom_command(TARGET pyin POST_BUILD COMMAND ${CMAKE_COMMAND} -E make_directory "include")
